@@ -2,11 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hi</h1>
+    <header>
+        <h1 class="logo">[Your Name]</h1>
+        <nav>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <div class="intro-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi, I’m [Your Name], a passionate [Your Profession]. Take a look at my work!</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <div class="gallery">
+            <a href="project1_large.jpg" class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1" class="portfolio-image">
+                <div class="portfolio-hover">
+                    <div class="portfolio-info">
+                        <h3>Project Title</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </a>
+            <!-- More projects -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+        <!-- Optionally add a contact form here -->
+    </section>
+
+    <footer>
+        <p>© 2024 by [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
